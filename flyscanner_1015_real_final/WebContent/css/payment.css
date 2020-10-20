@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.nav1 {
+	padding: 20px;
+	margin-bottom: 20px;
+	margin: 0px auto;
+	margin-top: 40px;
+	background: #042759;
+	color: #FFFFFF;
+	width: 1680px;
+	height: 100px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+
+.payinfo{
+	width: 550px;
+	margin: 0px auto;
+	margin-top:10px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	border: 1px solid #6E6E6E;
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+table{
+	border-collapse: collapse;
+}
+
+
+.tr1{
+	font-size:25px;
+	font-weight: bold;
+}
+.td_mm{
+	width:200px;
+	text-align: right;
+	font-size: 25px;
+}
+.td_mm2{
+	width: 250px;
+	text-align: right;
+	font-size: 25px;
+}
+.td_mm3{
+	width: 80px;
+	font-size: 25px;
+}

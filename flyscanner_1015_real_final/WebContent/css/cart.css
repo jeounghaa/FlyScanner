@@ -1,0 +1,94 @@
+@charset "UTF-8";
+body{
+	background: #F1F2F8;
+}
+#all {
+  margin: 20px auto;
+	padding: 20px 20px 20px 20px;
+	margin-bottom: 10px;
+	width: 1000px;
+}
+/* 테이블 */
+.cct {
+	/* border: 1px solid red; */
+	box-shadow: 3px 7px 6px -1px #969696;
+	margin: auto;
+	width: 600px;
+	height: 300px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	border-collapse: separate;
+	margin-bottom: 20px;
+	padding: 10px 0px;
+}
+.title {
+	font-size: 15pt;
+	padding-left: 10px;
+}
+.da {
+	padding-left: 10px;
+}
+.rem {
+	float: right;
+	border: 0px;
+	outline: 0;
+	background: #FFFFFF;
+}
+/* 왕복, 편도 */
+.way {
+	border: 1px solid black;
+	border-radius: 5px;
+	width:30px;
+	float:right;
+	margin-right: 10px;
+	background: #F1F2F8;
+}
+/* 테이블 이미지 */
+.hh {
+	width: 10px;
+	visibility:hidden;
+	display:none;
+}
+.ii {
+	padding: 0px;
+}
+.cct_i {
+	padding: 0px;
+	text-align: center;
+}
+.img{
+	width: 600px;
+	height: 150px;
+}
+.price {
+	padding-left: 10px;
+}
+/* '항공편보기' 버튼 */
+.sel {
+	float: right;
+	margin-right: 10px;
+	background: #042759;
+	outline: 0;
+	padding: 5px 20px;
+	color: #FFFFFF;
+	border: 0px;
+	border-radius: 5px;
+	font-size: 13pt;
+	width: 100%;
+}
+input {
+	width:20%;
+	border: 0;
+}
+input:focus {
+	outline:none;
+}
+#departTime {
+	width: 20%;
+}
+#seat {
+	width:5%;
+}
+#arriveCtID {
+	width:25%;
+}

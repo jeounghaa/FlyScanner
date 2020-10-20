@@ -1,0 +1,171 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 1500px;
+  color: black;
+  background-color: #F1F2F8;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 150px;
+  padding: 20px 0;
+  position: relative;
+}
+
+#header .logo {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  color: #0080ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header .logo a:hover {
+  text-decoration: none;
+}
+
+#header .logo {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+#login {
+	padding-right: 20px;
+}
+#cart {
+	padding-right: 20px;
+}
+.scrollto {
+	font-size: 25px;
+}
+
+.fun {
+	margin-top: 20px;
+	padding-right: 30px;
+	float: right;
+}
+
+@media (max-width: 768px) {
+  #header .logo h1 {
+    font-size: 28px;
+    padding: 8px 0;
+  }
+}
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 380px;
+  background-color: #F1F2F8;
+}
+
+#hero .hero-container {
+	margin-top: 0;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#hero h1 {
+	padding-top: 100px;
+	margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h2 {
+    font-size: 36px;
+  	font-weight: 700;
+    color: black;
+}
+
+#hero input {
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 14px;
+  border: 0;
+  padding: 0px 15px 2px 15px;
+  width: 200px;
+  height: 40px;
+  margin: 0 8px;
+  color: black;
+  font-size: 13pt;
+}
+
+.radio {
+	font-size: 15pt;
+}
+
+#hero button[type="submit"] {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: 200px;
+  display: inline-block;
+  padding: 7px 30px;
+  margin-top: 20px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #4f92af;
+  color: #fff;
+  background: #4f92af;
+}
+
+#hero button[type="submit"]:hover {
+  background: transparent;
+  color: black;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero input {
+    margin: 0 auto;
+  }
+}
+
+.recommend {
+  width: 100%;
+  height: 350px;
+  background-color: #e4edef;
+  padding: 20px;
+    justify-content: center;
+  align-items: center;
+}
+
+.recommend input {
+	font-size: 20px;
+}
+
+.rcResult {
+	font-size: 20px;
+}
+
+.lsy {
+	font-size: 20pt;
+	margin-left: 43%;
+}

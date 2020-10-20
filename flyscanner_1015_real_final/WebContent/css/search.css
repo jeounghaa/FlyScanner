@@ -1,0 +1,151 @@
+body{
+	background: #F1F2F8;
+}
+#all {
+  margin: 20px auto;
+	padding: 20px 20px 20px 20px;
+	margin-bottom: 10px;
+	width: 90%;
+	
+}
+.nav1 {
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #042759;
+	color: #FFFFFF;
+	position: static;
+	height: 100px;
+	border-radius: 10px 10px 0px 0px;
+}
+.info {
+	font-size: 15pt;
+	font-weight: bold; 
+}
+select {
+	color: #000000;
+	position: absolute;
+	left: 80%;
+	padding: 5px;
+	border-radius: 5px;
+}
+#sb {
+	float: right;
+	background: #FEBB02;
+}
+/* 지도 */
+#map {
+	margin: 0 auto;
+}
+/* 항공권 다시 선택 */
+.re {
+	background: #F1F2F8;
+	width: 200px;
+	margin-top: 30px;
+}
+#d1{
+	position: absolute;
+}
+/* 항공권 */
+#accordion {
+	position: absolute;
+	left: 25%;
+	width: 720px;
+	margin: 0 30px;
+}
+.panel {
+	margin-top: 20px;
+	background-color: #F1F2F8;
+	box-shadow: none;
+}
+/* border 안줌 */
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+}
+.panel-default {
+    border-color: #F1F2F8;
+}
+/* 가는날, 오는날 a */
+#out {
+	height: 50px;
+	font-size: 20pt;
+	font-weight: bold;
+	margin-right: 10px;
+}
+#in {
+	height: 50px;
+	font-size: 20pt;
+	font-weight: bold;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+/* 테이블 */
+table {
+	box-shadow: 3px 3px 3px -3px #969696;
+	text-align: center;
+	background: #FFFFFF;
+	margin-bottom: 30px;
+	border-collapse: separate;
+	border-radius: 10px;
+	width: 650px;
+}
+.a{
+	width: 20%;
+	vertical-align: middle;
+	padding-bottom: 2%;
+}
+.b {
+	width: 15%;
+}
+.c {
+	width: 20%;
+}
+.d {
+	width: 15%;
+}
+.f {
+	color: #FFFFFF;
+	visibility:hidden;
+}
+/* 화살표이미지 */
+#arrow {
+	width: 80%;
+	height: 40px;
+}
+.time {
+	font-size: 7pt;
+	vertical-align: top;
+	padding: 0px 0px 0px 0px;
+}
+
+/* '항공편보기'버튼 */
+.checkBtn {
+	width: 100px;
+	background: #FEBB02;
+}
+.checkBtn2 {
+	width: 100px;
+	background: #FEBB02;
+}
+/* 장바구니 */
+.icon {
+	padding: 0px;
+	width: 50px;
+}
+
+.cart {
+	/* background: url("../img/star.png") no-repeat; */
+	background: #FFFFFF;
+	border: 0;
+	outline: 0; /* 클릭했을 때 테두리X */
+}
+#iii {
+	width: 24px;
+}
+/* 선택한 항공편 정보 */
+#d2 {
+	position: absolute;
+	left: 80%;
+	background: #F1F2F8;
+	width: 200px;
+}
