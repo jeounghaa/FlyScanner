@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+
+<script
+	src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+
+<script type='text/javascript'
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+
+<script src="/js/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
+
+<script type='text/javascript'>
+                               	
+$(function() {
+	$("#b1").click(function() {
+		Email = document.getElementById('Email').value
+		pw = document.getElementById('pw').value
+		$.ajax({
+			url : "../menu_user/check4.jsp",
+			data : {
+				Email: Email,
+				pw: pw
+			},
+			success : function(result) {
+				if (result==1) {
+					alert("로그인 되었습니다")
+					location.href='../menu_user/login.jsp?Email='+Email+'&pw='+pw
+				}else{
+					  alert("아이디 혹은 비밀번호를 확인해주세요");
+				}
+			}
+		})
+		})
+})
+	
+</script>	
+</head>
+<body>
+<body>
+	<div class="container">
+		<div class="row" color="red">
+			<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+				<div class="card card-signin my-5">
+					<div class="card-body">
+						<h3 class="card-title text-center">
+							로그인
+							</h3>
+								<div class="form-label-group">
+
+									<input type="email" id="Email" name="Email"
+										class="form-control" placeholder="Email address" required
+										autofocus> <label for="inputEmail">이메일</label>
+								</div>
+
+								<div class="form-label-group">
+									<input type="password" id="pw" name="pw" class="form-control"
+										placeholder="Password" required> <label
+										for="inputPassword">패스워드</label>
+								</div>
+
+								<button class="btn btn-lg btn-primary btn-block text-uppercase"
+									type="submit" id="b1">로그인</button>
+
+							<hr class="my-4">
+							<a href="member.html">
+								<button class="btn btn-lg btn-google btn-block text-uppercase"
+									type="submit" >
+									<i class="fab fa-google mr-2"></i> 회원가입
+								</button>
+							</a> <a href="id.html">
+								<button class="btn btn-lg btn-facebook btn-block text-uppercase"
+									type="submit">
+									<i class="fab fa-facebook-f mr-2"></i> id/</i> pw찾기
+								</button>
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</body>
+</html>

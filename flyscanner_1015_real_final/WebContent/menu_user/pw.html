@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+
+<script
+	src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+
+<script type='text/javascript'
+	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+
+<script src="/js/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
+
+<script type='text/javascript'>
+	$(function() {
+			$("#b1").click(function() {
+			
+		Email = document.getElementById('Email').value
+		phone = document.getElementById('phone').value
+				$.ajax({
+		            
+					url : "../menu_user/check5.jsp",
+					
+					data : {
+						Email :Email,
+						phone :phone 
+					},
+					success : function(result) {
+				  if (result==1) {
+					
+					location.href='../menu_user/pw.jsp?Email='+Email+'&phone='+phone
+		     
+				}else{
+					  alert("아이디를확인해주세요");
+				}
+			}
+				})
+				})
+		})
+
+	</script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="../menu_user/login.html">
+          <img src="http://placehold.it/150x50?text=Login" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index2.jsp">메인
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../menu_user/id.html">ID찾기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../menu_user/pw.html">PW찾기</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+  
+</nav>
+<div class="container">
+		<div class="row" color="red">
+			<div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
+				<div class="card card-signin my-5">
+					<div class="card-body">
+						<h3 class="card-title text-center">
+							PW찾기
+							</h3>
+							
+								<div class="col-sm-7 mx-auto">
+									<input type="Email" id="Email" name="Email"
+										class="form-control" placeholder="Email address" required
+										autofocus> <label for="inputEmail">이메일</label>
+								</div>
+								<br>
+								<div class="col-sm-7 mx-auto">
+									<input type="text" id="phone" name="phone" class="form-control"
+										placeholder="phone" required> <label for="inputgender">휴대폰
+										번호</label>
+								</div>
+                                   <div class="col-sm-7 mx-auto">
+								<hr class="my-4">
+							
+								<button class="btn btn-lg btn-primary btn-block text-uppercase" id="b1">확인</button>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
